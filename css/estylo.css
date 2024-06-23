@@ -92,9 +92,20 @@ h1{
  }
 
  .clearfix{
-  padding: 20px;
-  border-style: double;
+  padding: 10px;
+  margin: 1rem;
  }
+
+ @media screen and (max-width: 767px) {
+  .col-md-4 {
+    width: 100%;
+    width: 100%;
+    border-style: solid;
+    
+  }
+ }
+ 
+  
  
  /* menu______________________ */
 
@@ -147,6 +158,13 @@ h1{
     flex-direction: column;
 }
 }
+
+@media screen and (max-width: 767px){
+  .imag :hover{
+    transform: scale(1.1)
+  }
+}
+
 .imag{
   width: 5rem;
   height: 5rem;
@@ -154,8 +172,9 @@ h1{
   border: 4px double black;
   opacity: 0.9;
 }
- 
-.imag:hover {
+
+
+ .imag:hover {
   transform: scale(1.1);
 }
 
