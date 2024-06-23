@@ -146,7 +146,7 @@ h1{
 
 @media screen and (max-width: 404px){
 .fondo{
-  background-color: white;
+  background-color: blue;
 }
 }
 
@@ -159,7 +159,7 @@ h1{
 }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 404px){
   .imag :hover{
     transform: scale(1.1)
   }
@@ -186,6 +186,16 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: rgb(20, 20, 20);
   opacity: 0.9;
 }
+
+@media screen and (max-width: 870px){
+  .enunciado{
+    font-size: 10px;
+  }
+}
+
+
+
+
 
 .ama{
   font-family: PlayfairDisplay-Bold;
