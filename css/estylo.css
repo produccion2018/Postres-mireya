@@ -187,9 +187,9 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   opacity: 0.9;
 }
 
-@media screen and (max-width: 870px){
+@media screen and (max-width: 640px){
   .enunciado{
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
