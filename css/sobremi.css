@@ -53,12 +53,14 @@
     line-height: 1.6;
   }
   
-  /* Reset general */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+ h3{
+  
+  font-family: "Courgette", cursive;
+ font-size:5rem;
+ color: #020202;
+ }
+  
+
   
   /* Sección Sobre Mí */
 .sobre-mi {
