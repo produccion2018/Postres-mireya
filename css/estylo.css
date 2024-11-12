@@ -42,26 +42,22 @@ justify-content: space-between;
 }
 
   /* Carrusel Styles */
-  .carousel-item {
-    position: relative;
-    height: 500px;
-  }
+  .slide {
+    margin: 1rem;
+}
 
-  .carousel-item img {
+.slide img {
+    min-height: 15rem;
+    height: 70vh;
     object-fit: cover;
-    height: 100%;
-    width: 100%;
-  }
+    object-position: center;
+    opacity: 0.6;
+}
 
-  .carousel-caption h1,
-  .carousel-caption h2,
-  .carousel-caption h5 {
-    font-family: 'Berkshire Swash', cursive;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  }
-
-  
+main {
+    display: flex;
+    flex-direction: column;
+}
 
 /* Sección de Testimonios */
 .testimonios {
