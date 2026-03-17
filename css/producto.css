@@ -1,201 +1,455 @@
-*{
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
- 
-  
+/* RESET */
+
+body{
+
+margin:0;
+padding:0;
+font-family:Arial, Helvetica, sans-serif;
+
 }
 
-/* barra de navegaccion */
-.web-logo{
-  border-radius: 50%;
-  width: 30px;
-  margin-bottom: 10px;
-  opacity: 0.9;
+
+/* ======================
+NAVBAR
+====================== */
+
+.nav-mireya{
+
+background:#e6a6b0;
+padding:15px;
+
 }
 
+
+.logo-mireya{
+
+width:45px;
+border-radius:50%;
+
+}
 
 
 .nav-link{
-font-family: "Courgette", cursive;
-font-size:1rem;
-color: #33353d;
+
+font-family:'Dancing Script', cursive;
+font-size:24px;
+font-weight:700;
+letter-spacing:1px;
+color:#2c2c2c;
+margin-left:25px;
+transition:0.3s;
 
 }
 
-.navbar {
-padding: 3rem;
-background-color: pink;
-}
-.navbar-collapse {
-align-items: center;
-justify-content: space-between;  
+.nav-link:hover{
+
+color:white;
+
 }
 
-.nav-link:hover {
-  background-color: #ffffff;
-  color: #f8b400;
-  padding: 5px;
-  border-radius: 5px;
-  transition: 0.3s;
+
+/* BOTON PEDI ONLINE */
+
+.boton-pedido{
+
+background:#ff1f3d;
+color:white;
+padding:10px 18px;
+font-size:14px;
+font-weight:600;
+border-radius:3px;
+text-decoration:none;
+transition:0.3s;
+
 }
 
-  /* Carrusel Styles */
-  .carousel-item {
-    position: relative;
-    height: 500px;
-  }
+.boton-pedido:hover{
 
-  .carousel-item img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-  }
+background:#d9152f;
+color:white;
 
-  .carousel-caption h1,
-  .carousel-caption h2,
-  .carousel-caption h5 {
-    font-family: 'Berkshire Swash', cursive;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px #00000080;
-  }
-
-  .fondo{
-    background-color: #808080
-  }
-
-
-/* Container and Card Styles */
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
-  margin: auto;
 }
 
-.card {
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
-  padding: 10px;
-  box-shadow: 0 4px 8px #0000001a;
+
+
+/* ======================
+TITULOS CATEGORIA
+====================== */
+
+.titulo-categoria{
+
+height:220px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+position:relative;
+
 }
 
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+
+/* CAPA OSCURA SOBRE LA FOTO */
+
+.titulo-categoria::before{
+
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+
 }
 
-.card .title {
-  font-size: 1.2em;
-  margin: 10px 0;
-  color: #333;
+
+/* TITULO TIPOGRAFIA CORRIDA */
+
+.titulo-categoria h2{
+
+position:relative;
+font-family:'Dancing Script', cursive;
+font-size:55px;
+font-weight:700;
+letter-spacing:2px;
+color:white;
+text-shadow:2px 2px 10px rgba(0,0,0,0.6);
+
 }
 
-.card .description {
-  font-size: 0.9em;
-  color: #666;
+
+/* LINEA DECORATIVA */
+
+.titulo-categoria h2::after{
+
+content:"";
+display:block;
+width:120px;
+height:3px;
+background:white;
+margin:10px auto 0;
+border-radius:3px;
+
 }
 
-/* Hover effect */
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 15px #0000004d;
+
+
+/* ======================
+IMAGENES DE FONDO
+====================== */
+
+.chocolate{
+
+background-image:url("../Imagenes/chocolate-bg.jpg");
+background-size:cover;
+background-position:center;
+
 }
 
-/* Active class effect */
-.card.active {
-  transform: scale(1.08);
-  border: 2px solid #ff6347;
+.frutales{
+
+background-image:url("../Imagenes/frutas-bg.jpg");
+background-size:cover;
+background-position:center;
+
 }
 
-.card.active .title {
-  color: #ff6347;
+.clasicas{
+
+background-image:url("../Imagenes/torta-clasica-bg.jpg");
+background-size:cover;
+background-position:center;
+
 }
 
-/* footer  */
 
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 40px 20px;
-  font-family: 'Courgette', sans-serif;
-  text-align: center;
+
+/* ======================
+SECCION PRODUCTOS
+====================== */
+
+.menu-postres{
+
+padding:80px 0;
+background:white;
+
 }
 
-.footer .container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
+
+
+/* ======================
+CARDS PRODUCTOS
+====================== */
+
+.tarjeta-postre{
+
+border:none;
+box-shadow:0 8px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+
 }
 
-/* Secciones del Footer */
-.footer-section {
-  flex: 1 1 200px;
-  margin: 10px;
+
+.tarjeta-postre:hover{
+
+transform:translateY(-6px);
+
 }
 
-.footer-logo {
+
+/* IMAGEN CARD */
+
+.tarjeta-postre img{
+
+height:180px;
+object-fit:cover;
+
+}
+
+
+/* TITULO TORTA */
+
+.tarjeta-postre h5{
+
+font-family:'Playfair Display', serif;
+font-size:18px;
+
+}
+
+
+/* TEXTO TORTA */
+
+.tarjeta-postre p{
+
+font-size:13px;
+color:#555;
+line-height:1.4;
+
+}
+
+
+
+/* ======================
+FOOTER
+====================== */
+
+.footer-mireya{
+
+background:#f2f2f2;
+padding:70px 0;
+border-top:1px solid #ddd;
+
+}
+
+
+.footer-logo{
+
+width:60px;
+margin-bottom:15px;
+
+}
+
+
+.footer-frase{
+
+font-style:italic;
+color:#555;
+
+}
+
+
+.footer-mail{
+
+color:#e91e63;
+font-weight:500;
+
+}
+
+
+.footer-links{
+
+list-style:none;
+padding:0;
+
+}
+
+.footer-links li{
+
+margin-bottom:8px;
+cursor:pointer;
+
+}
+
+.footer-links li:hover{
+
+color:#e91e63;
+
+}
+
+
+.footer-texto{
+
+font-size:14px;
+line-height:1.6;
+
+}
+
+
+.boton-suscribirse{
+
+background:#ff1f3d;
+color:white;
+border:none;
+padding:10px;
+
+}
+
+.boton-suscribirse:hover{
+
+background:#d9152f;
+
+}
+
+/* flecha  */
+/* BOTÓN SUBIR */
+
+#btnSubir {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+  width: 45px;
+  height: 45px;
+
+  border: none;
   border-radius: 50%;
-  width: 30px;
-  margin-bottom: 10px;
-  opacity: 0.7;
-}
 
-/* Enlaces */
-.footer a {
-  color: #f8b400;
-  text-decoration: none;
-}
+  background-color: #d4a373;
+  color: white;
 
-.footer a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
+  font-size: 18px;
+  font-weight: bold;
 
-/* Listas */
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-section ul li {
-  margin: 5px 0;
-}
-
-/* Formulario de suscripción */
-.subscription-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-.subscription-form input {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-}
-
-.subscription-form button {
-  background-color: #f8b400;
-  color: #333;
-  border: none;
-  padding: 10px;
   cursor: pointer;
-  border-radius: 5px;
-  transition: 0.3s;
+
+  display: none; /* oculto al inicio */
+
+  box-shadow: 0 4px 10px #00000033;
+
+  transition: all 0.3s ease;
 }
 
-.subscription-form button:hover {
-  background-color: #fff;
-  color: #f8b400;
+#btnSubir:hover {
+  background-color: #b08968;
+  transform: scale(1.1);
+}
+
+/* imag de seccion  */
+/* =========================
+TITULOS CON FONDO
+========================= */
+
+.titulo-categoria {
+  position: relative;
+  padding: 80px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* CAPA OSCURA (para que se lean bien las letras) */
+.titulo-categoria::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* opacidad */
+  z-index: 1;
+}
+
+/* TEXTO */
+.titulo-categoria h2 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 42px;
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 2px;
+}
+
+/* =========================
+FONDOS POR CATEGORIA
+========================= */
+
+.chocolate {
+  background: url("../Imagenes/torta\ de\ chocolate.jpeg") center/cover no-repeat;
+}
+
+.frutales {
+  background: url("../Imagenes/fondo-frutales.jpg") center/cover no-repeat;
+}
+
+.clasicas {
+  background: url("../Imagenes/fondo-clasicas.jpg") center/cover no-repeat;
+}
+
+/* ITEM */
+.item-postre {
+  display: flex;
+  align-items: center;
+}
+
+/* IMAGEN CHICA */
+.img-mini {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.img-mini:hover {
+  transform: scale(1.05);
+}
+
+/* TEXTO */
+.info-postre h4 {
+  font-family: serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.info-postre p {
+  font-style: italic;
+  font-size: 14px;
+  color: #555;
+}
+
+
+/* visor modo */
+.visor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.visor img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.cerrar {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
 }

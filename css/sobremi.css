@@ -1,175 +1,255 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-   
-    
+/* RESET */
+
+body{
+margin:0;
+padding:0;
+font-family:Arial, Helvetica, sans-serif;
 }
-  
-/* barra de navegaccion */
+
+
+/* =========================
+NAVBAR
+========================= */
+
+.nav-mireya{
+background:#e6a6b0;
+padding:15px;
+}
+
+
+/* LOGO */
+
+.logo-mireya{
+width:45px;
+border-radius:50%;
+}
+
+
+/* LINKS NAV */
 
 .nav-link{
- font-family: "Courgette", cursive;
- font-size:1rem;
- color: #33353d;
- 
-  }
 
-  .web-logo{
-    border-radius: 50%;
-    width: 30px;
-    margin-bottom: 10px;
-    opacity: 0.9;
-  }
-  
-  
-  .navbar {
-  padding: 3rem;
-  background-color: pink;
- }
-  
+font-family:'Dancing Script', cursive;
 
- 
-.navbar-collapse {
-  align-items: center;
-  justify-content: space-between;  
+font-size:24px;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+color:#2c2c2c;
+
+margin-left:25px;
+
+transition:0.3s;
+
 }
 
-.nav-link:hover {
-    background-color: #ffffff;
-    color: #f8b400;
-    padding: 5px;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
-
-/* Reset CSS */
-
-  
- .sobremi{
-    font-family: 'Hind Vadodara', sans-serif;
-    color: #333;
-    background-color: #f5f5f5;
-    line-height: 1.6;
-  }
-  
- h3{
-  
-  font-family: "Courgette", cursive;
- font-size:5rem;
- color: #020202;
- }
-  
-
-  
-  /* Sección Sobre Mí */
-.sobre-mi {
-  padding: 2rem;
-  background-color: #fff;
-  margin-top: 1rem;
-}
-
-.sobre-mi img {
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 100%;
-}
-
-.titulo {
-  font-family: 'Courgette', cursive;
-  font-size: 2rem;
-  color: #444;
-}
-
-.subtitulo {
-  font-family: 'Dancing Script', cursive;
-  font-size: 1.5rem;
-  color: #777;
+.nav-link:hover{
+color:white;
 }
 
 
-  /* footer  */
+/* BOTON PEDIDO */
 
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 40px 20px;
-    font-family: 'Courgette', sans-serif;
-    text-align: center;
-  }
-  
-  .footer .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-  }
-  
-  /* Secciones del Footer */
-  .footer-section {
-    flex: 1 1 200px;
-    margin: 10px;
-  }
-  
-  .footer-logo {
-    border-radius: 50%;
-    width: 30px;
-    margin-bottom: 10px;
-    opacity: 0.7;
-  }
-  
-  /* Enlaces */
-  .footer a {
-    color: #f8b400;
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
-  
-  /* Listas */
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-section ul li {
-    margin: 5px 0;
-  }
-  
-  /* Formulario de suscripción */
-  .subscription-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 15px;
-  }
-  
-  .subscription-form input {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-  }
-  
-  .subscription-form button {
-    background-color: #f8b400;
-    color: #333;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
-  
-  .subscription-form button:hover {
-    background-color: #fff;
-    color: #f8b400;
-  }
-  
-  
-  
-  
+.boton-pedido{
+
+background:#ff1f3d;
+
+color:white;
+
+padding:10px 18px;
+
+font-size:14px;
+
+font-weight:600;
+
+border-radius:3px;
+
+text-decoration:none;
+
+transition:0.3s;
+
+}
+
+.boton-pedido:hover{
+
+background:#d9152f;
+
+color:white;
+
+}
+
+
+/* =========================
+SECCION SOBRE MI
+========================= */
+
+.sobre-mireya{
+
+padding:100px 0;
+
+background:white;
+
+}
+
+
+/* TITULO */
+
+.titulo-sobre{
+
+font-family:'Playfair Display', serif;
+
+font-size:42px;
+
+margin-bottom:10px;
+
+color:#2c2c2c;
+
+}
+
+
+/* SUBTITULO */
+
+.subtitulo-sobre{
+
+font-family:'Dancing Script', cursive;
+
+font-size:28px;
+
+color:#e91e63;
+
+margin-bottom:20px;
+
+}
+
+
+/* TEXTO */
+
+.sobre-mireya p{
+
+font-size:16px;
+
+line-height:1.8;
+
+color:#444;
+
+}
+
+
+/* FOTO */
+
+.foto-mireya{
+
+border-radius:10px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+.footer-mireya{
+
+background:#f2f2f2;
+
+padding:70px 0;
+
+border-top:1px solid #ddd;
+
+}
+
+
+/* LOGO FOOTER */
+
+.footer-logo{
+
+width:60px;
+
+margin-bottom:15px;
+
+}
+
+
+/* FRASE */
+
+.footer-frase{
+
+font-style:italic;
+
+color:#555;
+
+}
+
+
+/* MAIL */
+
+.footer-mail{
+
+color:#e91e63;
+
+font-weight:500;
+
+}
+
+
+/* LINKS */
+
+.footer-links{
+
+list-style:none;
+
+padding:0;
+
+}
+
+.footer-links li{
+
+margin-bottom:8px;
+
+cursor:pointer;
+
+}
+
+.footer-links li:hover{
+
+color:#e91e63;
+
+}
+
+
+/* TEXTO HISTORIA */
+
+.footer-texto{
+
+font-size:14px;
+
+line-height:1.6;
+
+}
+
+
+/* BOTON SUSCRIPCION */
+
+.boton-suscribirse{
+
+background:#ff1f3d;
+
+color:white;
+
+border:none;
+
+padding:10px;
+
+transition:0.3s;
+
+}
+
+.boton-suscribirse:hover{
+
+background:#d9152f;
+
+}

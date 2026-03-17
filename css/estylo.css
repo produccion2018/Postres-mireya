@@ -1,284 +1,200 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body{
+
+margin:0;
+padding:0;
+
 }
 
-/* Barra de navegación */
-.web-logo {
-  border-radius: 50%;
-  width: 30px;
-  margin-bottom: 10px;
-  opacity: 0.9;
+
+/* NAVBAR */
+
+.nav-mireya{
+
+background:#e6a6b0;
+padding:15px;
+
 }
 
-.nav-link {
-  font-family: "Courgette", cursive;
-  font-size: 1rem;
-  color: #33353d;
+
+/* LOGO */
+
+.logo-mireya{
+
+width:45px;
+border-radius:50%;
+
 }
 
-.navbar {
-  padding: 3rem;
-  background-color: #ffc0cb;
+
+.nav-link{
+
+font-family:'Dancing Script', cursive;
+
+font-size:24px;       /* tamaño más grande */
+
+font-weight:700;      /* letras más gruesas */
+
+letter-spacing:1px;   /* separa un poco las letras */
+
+color:#2c2c2c;
+
+margin-left:25px;
+
+transition:0.3s;
+
 }
 
-.navbar-collapse {
-  align-items: center;
-  justify-content: space-between;
+.nav-link:hover{
+
+color:white;
+
+}
+/* CARRUSEL */
+
+.imagen-carrusel{
+
+height:700px;
+object-fit:cover;
+
+}
+.imagen-carrusel{
+
+height:700px;
+object-fit:cover;
+opacity:0.85;   /* controla la transparencia */
+
+}
+.carousel-item{
+
+position:relative;
+
 }
 
-.nav-link:hover {
-  background-color: #ffffff;
-  color: #f8b400;
-  padding: 5px;
-  border-radius: 5px;
-  transition: 0.3s;
+.carousel-item::after{
+
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#00000040;  /* opacidad elegante */
+
 }
 
-/* Carrusel Styles */
-.slide {
-  margin: 1rem;
+/* BOTON PEDI ONLINE */
+
+.boton-pedido{
+
+background:#ff1f3d;
+color:white;
+padding:10px 18px;
+font-size:14px;
+font-weight:600;
+border-radius:3px;
+text-decoration:none;
+transition:0.3s;
+
 }
 
-.slide img {
-  min-height: 15rem;
-  height: 70vh;
-  object-fit: cover;
-  object-position: center;
-  opacity: 0.8;
+.boton-pedido:hover{
+
+background:#d9152f;
+color:white;
+
 }
 
-main {
-  display: flex;
-  flex-direction: column;
+/* FOOTER */
+
+.footer-mireya{
+
+background:#ffffff;
+padding:70px 0;
+border-top:1px solid #eee;
+
 }
 
-/* Sección de Testimonios */
-.testimonios {
-  background-color: #f7f7f7;
-  padding: 50px 20px;
-  text-align: center;
+
+.footer-logo{
+
+width:60px;
+margin-bottom:15px;
+
 }
 
-.testimonios h2 {
-  font-family: 'Berkshire Swash', cursive;
-  color: #333;
-  margin-bottom: 40px;
+
+.footer-frase{
+
+font-style:italic;
+color:#555;
+
 }
 
-.testimonios-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+
+.footer-mail{
+
+color:#e91e63;
+font-weight:500;
+
 }
 
-.testimonial {
-  background-color: #1b01013b;
-  border: 2px solid #270101;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0px 4px 8px #0000001a;
+
+/* LINKS */
+
+.footer-links{
+
+list-style:none;
+padding:0;
+
 }
 
-.testimonial p {
-  font-style: italic;
-  color: #0400ff;
+.footer-links li{
+
+margin-bottom:8px;
+cursor:pointer;
+
 }
 
-.testimonial h4 {
-  font-weight: bold;
-  color: #160105;
-  margin-top: 15px;
+.footer-links li:hover{
+
+color:#e91e63;
+
 }
 
-/* footer */
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 40px 20px;
-  font-family: 'Courgette', sans-serif;
-  text-align: center;
+
+/* TEXTO HISTORIA */
+
+.footer-texto{
+
+font-size:14px;
+line-height:1.6;
+
 }
 
-.footer .container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
+
+/* BOTON SUSCRIPCION */
+
+.boton-suscribirse{
+
+background:#ff1f3d;
+color:white;
+border:none;
+padding:10px;
+
 }
 
-.footer-section {
-  flex: 1 1 200px;
-  margin: 10px;
+.boton-suscribirse:hover{
+
+background:#d9152f;
+
 }
 
-.footer-logo {
-  border-radius: 50%;
-  width: 30px;
-  margin-bottom: 10px;
-  opacity: 0.7;
-}
+/* Fondo footer  */
 
-/* Enlaces */
-.footer a {
-  color: #f8b400;
-  text-decoration: none;
-}
+.footer-mireya{
 
-.footer a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
+background:#f2f2f2;   /* gris claro elegante */
+padding:70px 0;
+border-top:1px solid #ddd;
 
-/* Listas */
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-section ul li {
-  margin: 5px 0;
-}
-
-/* Formulario de suscripción */
-.subscription-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-.subscription-form input {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-}
-
-.subscription-form button {
-  background-color: #f8b400;
-  color: #333;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-
-.subscription-form button:hover {
-  background-color: #fff;
-  color: #f8b400;
-}
-
-/* Estilos de las Cards */
-.card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px #0000001a;
-  padding: 20px;
-  margin: 1rem;
-  transition: transform 0.3s ease-in-out;
-  display: flex;
-  flex-direction: column;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.card h5 {
-  font-size: 1.25rem;
-  color: #333;
-  margin-top: 1rem;
-}
-
-.card p {
-  color: #555;
-  font-size: 1rem;
-}
-
-/* Card hover effect */
-.card:hover {
-  transform: translateY(-5px);
-}
-
-/* Cards container */
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1.5rem;
-  padding: 1rem;
-}
-
-/* Estilos responsive */
-@media (max-width: 768px) {
-  /* Ajustes para tablets */
-  .navbar {
-    padding: 1.5rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  .footer .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-section {
-    text-align: center;
-  }
-
-  .card {
-    width: 48%;
-    margin: 1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  /* Ajustes para móviles */
-  .navbar {
-    padding: 1rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  .titulo {
-    font-size: 1.2rem;
-  }
-
-  .footer .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-section {
-    text-align: center;
-  }
-
-  .subscription-form {
-    width: 100%;
-  }
-
-  .cards-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-  }
-
-  .card {
-    width: 48%; /* Aumentamos el ancho de las cards para móviles */
-    margin: 1rem 0;
-  }
 }
