@@ -88,70 +88,43 @@ color:white;
 
 }
 
-/* sobre mi */
+/* Sobre mi */
 
-.seccion-mireya{
-  padding: 80px 20px;
-  background: #fff;
+/* TEXTO */
+.texto-mireya{
+  font-size: 17px;
+  color: #444;
+  line-height: 1.6;
 }
 
-/* HEADER CENTRADO */
-.header-mireya{
-  text-align: center;
-  margin-bottom: 40px;
+/* IMAGEN */
+.img-mireya{
+  max-width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px #00000026;
 }
 
-/* TITULO GRANDE */
-.titulo{
-  font-size: 60px;
-  font-weight: 900;
-  margin: 0;
-  color: #2c2c2c;
-  font-family: 'Playfair Display', serif;
-}
+@media (max-width: 768px){
 
-.subtitulo{
-  font-size: 22px;      /* tamaño mediano */
-  text-align: center;   /* centrado */
-  margin-top: 15px;     /* un poco abajo del título */
-  line-height: 1.6;     /* texto más prolijo */
-  font-style: italic;   /* estilo lindo */
-  color: #777;
-}
+  .titulo-mireya{
+    font-size: 34px;
+    text-align: center;
+  }
 
-/* CONTENIDO FLEX */
-.contenido-mireya{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
+  .subtitulo-mireya{
+    font-size: 17px;
+    text-align: center;
+  }
 
-/* TEXTO IZQUIERDA */
-.texto{
-  flex: 1;
 }
+  .subtitulo-mireya{
+    text-align: center;
+  }
 
-.texto p{
-  font-size: 18px;
-  line-height: 1.8;
-  text-align: justify; /* corrido */
-  color: #555;
-}
+  .texto-mireya{
+    text-align: left;
+  }
 
-/* IMAGEN DERECHA */
-.imagen{
-  flex: 1;
-  text-align: center;
-}
-
-.imagen img{
-  width: 100%;
-  max-width: 400px;
-  border-radius: 20px;
-}
 
 /* =========================
 FOOTER
@@ -259,41 +232,6 @@ background:#d9152f;
 
 }
 
-/* =========================
-RESPONSIVE SOBRE MI 📱
-========================= */
-
-@media (max-width: 768px){
-
-  /* CONTENEDOR EN COLUMNA */
-  .contenido-mireya{
-    flex-direction: column;
-    text-align: center;
-    gap: 25px;
-  }
-
-  /* TITULO MÁS CHICO */
-  .titulo{
-    font-size: 38px;
-  }
-
-  /* SUBTITULO */
-  .subtitulo{
-    font-size: 18px;
-    padding: 0 10px;
-  }
-
-  /* TEXTO */
-  .texto p{
-    font-size: 16px;
-    text-align: left; /* mejor lectura en celular */
-    line-height: 1.6;
-  }
-
-  /* IMAGEN */
-  .imagen img{
-    max-width: 280px;
-    border-radius: 15px;
-  }
-
+.header-mireya{
+  margin-bottom: 50px; /* 🔥 separa todo el header del contenido */
 }
