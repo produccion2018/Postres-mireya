@@ -259,3 +259,41 @@ background:#d9152f;
 
 }
 
+/* =========================
+RESPONSIVE SOBRE MI 📱
+========================= */
+
+@media (max-width: 768px){
+
+  /* CONTENEDOR EN COLUMNA */
+  .contenido-mireya{
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  /* TITULO MÁS CHICO */
+  .titulo{
+    font-size: 38px;
+  }
+
+  /* SUBTITULO */
+  .subtitulo{
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  /* TEXTO */
+  .texto p{
+    font-size: 16px;
+    text-align: left; /* mejor lectura en celular */
+    line-height: 1.6;
+  }
+
+  /* IMAGEN */
+  .imagen img{
+    max-width: 280px;
+    border-radius: 15px;
+  }
+
+}
