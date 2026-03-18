@@ -1,163 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto - Pastelería Mireya Becerra</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="author" content="Mauro Pinto" />
-  <meta name="description" content="Postres Mireya" />
-  <meta name="keywords" content="Tortas naturales, orgánica, postres, budines" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Postres Mireya</title>
-</head>
-
-  </title>
-  <link rel="shortcut icon" href="../Imagenes/favicon-32x32.png" type="image/x-icon">
-  <!-- css -->
-  <link rel="stylesheet" href="../css/contacto.css">
-  <link rel="stylesheet" href="styles.css">
-  <!-- googlefont -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&display=swap"
-    rel="stylesheet">
-  <!-- font de texto -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Hind+Vadodara:wght@300;400;500;600;700&family=Playwrite+MX:wght@100..400&family=Playwrite+PT:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <!-- bootstrap. -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- font-awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-  <link rel="shortcut icon" href="../Imagenes/favicon-32x32.png" type="image/x-icon">
-</head>
-
-<body>
-  <!-- Barra de navegacion -->
-
-  <nav class="navbar navbar-expand-md navbar-light">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
-        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar-toggler">
-        <a class="navbar-brand" href="#">
-          <img class="web-logo" src="../Imagenes/icono mireya.jpeg" alt="Logo de la página web">
+    <link rel="shortcut icon" href="./Imagenes/" type="image/x-icon" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/contacto.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg nav-mireya">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">
+          <img src="../Imagenes/icono mireya.jpeg" class="logo-mireya" />
         </a>
-        <ul class="navbar-nav d-flex justify-content-center align-items-center">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">INICIO
-
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../pages/sobre-mi.html">SOBRE MÍ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../pages/menu.html">MENÚ
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
-          </li>
-        </ul>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobre-mi.html">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">Menú</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contacto</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="btn boton-pedido" href="#">🛒 Pedí Online</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  </header>
-  <!-- Contenedor de Formulario y Mapa -->
-  <div class="container container-form-map">
-    <form id="contactForm" class="contact-form p-4 bg-light rounded shadow">
-      <h2 class="text-center">Contacto</h2>
-      <div class="mb-3">
-        <label for="name" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="name" required>
+    </nav>
+
+    <!-- CONTACTO -->
+    <section class="container my-5">
+      <h2
+        class="text-center mb-4"
+        style="font-family: &quot;Playfair Display&quot;, serif"
+      >
+        Contáctanos
+      </h2>
+      <p class="text-center mb-5">
+        Si tenés alguna consulta, sugerencia o querés hacer un pedido especial,
+        completá el formulario y nos pondremos en contacto.
+      </p>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                placeholder="Tu nombre"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="tu@email.com"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea
+                class="form-control"
+                id="mensaje"
+                rows="5"
+                placeholder="Escribí tu mensaje"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn boton-suscribirse w-100">
+              Enviar
+            </button>
+          </form>
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Correo Electrónico</label>
-        <input type="email" class="form-control" id="email" required>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-mireya">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="../Imagenes/logo.png" class="footer-logo" />
+            <p class="footer-frase">
+              El ingrediente favorito es la pasión en todo lo que hacés.
+            </p>
+            <p class="footer-mail">postremireya@gmail.com</p>
+          </div>
+          <div class="col-md-2">
+            <h5>Nuestras Secciones</h5>
+            <ul class="footer-links">
+              <li>Inicio</li>
+              <li>Sobre Mí</li>
+              <li>Menú</li>
+              <li>Contacto</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Mireya Becerra</h5>
+            <p class="footer-texto">
+              Mi pasión por la cocina empezó de chiquita, gracias a mi mamá y
+              mis abuelas, que me inculcaron el oficio con mucho amor y
+              dedicación. Desde que tengo recuerdo soy acumuladora de recetas, y
+              a los 15 años comencé a hacer mis primeras tortas por encargo a
+              familiares, amigos y vecinos del barrio.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>Suscribite</h5>
+            <p>Suscribite para recibir nuestras novedades!</p>
+            <input
+              type="email"
+              class="form-control mb-2"
+              placeholder="Ingresa tu Email"
+            />
+            <button class="btn boton-suscribirse w-100">Suscribirse</button>
+          </div>
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="message" class="form-label">Mensaje</label>
-        <textarea class="form-control" id="message" rows="4" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary w-100">Enviar</button>
-    </form>
+    </footer>
 
-    <!-- Mapa de Google -->
-    <div class="map-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.01866038798!2d-122.4194151846817!3d37.77492927975827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064dfffbb01%3A0xc9c7a3f3bb37f83!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1636806503245!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-  </div>
-
-
-  <footer class="footer">
-    <div class="container">
-      <!-- Logo y descripción -->
-      <div class="footer-section">
-        <img src="./Imagenes/icono mireya.jpeg  " alt="Logo" class="footer-logo" />
-        <p>El ingrediente favorito es la pasión en todo lo que hacés.</p>
-      </div>
-
-      <!-- Información de contacto -->
-      <div class="footer-section">
-        <p><a href="postremireya@gmail.com">postremireya@gmail.com</p>
-
-      </div>
-
-      <!-- Nuestras Secciones -->
-      <div class="footer-section">
-        <h4>Nuestras Secciones</h4>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Sobre Mí</a></li>
-          <li><a href="#">Menú</a></li>
-          <li><a href="#">Contacto</a></li>
-
-        </ul>
-      </div>
-
-      <!-- Locales -->
-      <div class="footer-section">
-        <h4>Mireya Becerra</h4>
-        <ul>
-
-
-          <p>Mi pasión por la cocina empezó de chiquita, gracias a mi mamá y mis abuelas, que me inculcaron el oficio
-            con mucho amor y dedicación. Desde que tengo recuerdo soy acumuladora de recetas, y a los 15 años comencé
-            a hacer mis primeras tortas por encargo a familiares, amigos y vecinos del barrio</p>
-        </ul>
-      </div>
-
-      <!-- Suscripción -->
-      <div class="footer-section">
-        <h4>Suscribite</h4>
-        <p>Suscribite para recibir nuestras novedades!</p>
-        <form id="formSuscripcion" class="subscription-form">
-          <input type="email" placeholder="Ingresa tu Email" required />
-          <button type="submit">Suscribirse</button>
-        </form>
-      </div>
-    </div>
-  </footer>
-
-
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="../js/contacto.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
-
-
-
-

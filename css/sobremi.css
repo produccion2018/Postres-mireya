@@ -1,73 +1,82 @@
-/* RESET */
-
 body{
-margin:0;
-padding:0;
-font-family:Arial, Helvetica, sans-serif;
+  margin:0;
+  padding:0;
 }
 
 
-/* =========================
-NAVBAR
-========================= */
+/* NAVBAR */
 
 .nav-mireya{
-background:#e6a6b0;
-padding:15px;
+  background:#e6a6b0;
+  padding:15px;
 }
 
 
 /* LOGO */
 
 .logo-mireya{
-width:45px;
-border-radius:50%;
+  width:45px;
+  border-radius:50%;
 }
 
 
-/* LINKS NAV */
+/* NAV LINKS (MEJORADO 🔥) */
 
 .nav-link{
+  font-family:'Dancing Script', cursive;
 
-font-family:'Dancing Script', cursive;
+  font-size:26px;        /* 🔥 un poco más grande */
+  font-weight:900;       /* 🔥 MÁS GRUESO REAL */
 
-font-size:24px;
+  letter-spacing:1px;
+  color:#2c2c2c;
 
-font-weight:700;
+  margin-left:25px;
 
-letter-spacing:1px;
+  transition:all 0.3s ease;
 
-color:#2c2c2c;
-
-margin-left:25px;
-
-transition:0.3s;
-
+  /* 🔥 simula más grosor sin cambiar fuente */
+  text-shadow: 1px 0 #2c2c2c;
 }
+
+
+/* HOVER MEJORADO 🔥 */
 
 .nav-link:hover{
-color:white;
+  color:white;
+  transform:scale(1.05); /* leve crecimiento */
 }
 
 
-/* BOTON PEDIDO */
+/* =========================
+RESPONSIVE NAV 🔥
+========================= */
+
+@media (max-width: 991px){
+
+  .nav-link{
+    margin-left:0;
+    margin-top:10px;
+    font-size:24px;
+    text-align:center;
+  }
+
+  .navbar-nav{
+    align-items:center;
+  }
+
+}
+/* BOTON PEDI ONLINE */
 
 .boton-pedido{
 
 background:#ff1f3d;
-
 color:white;
-
 padding:10px 18px;
-
 font-size:14px;
-
 font-weight:600;
-
 border-radius:3px;
-
 text-decoration:none;
-
 transition:0.3s;
 
 }
@@ -75,78 +84,74 @@ transition:0.3s;
 .boton-pedido:hover{
 
 background:#d9152f;
-
 color:white;
 
 }
 
+/* sobre mi */
 
-/* =========================
-SECCION SOBRE MI
-========================= */
-
-.sobre-mireya{
-
-padding:100px 0;
-
-background:white;
-
+.seccion-mireya{
+  padding: 80px 20px;
+  background: #fff;
 }
 
-
-/* TITULO */
-
-.titulo-sobre{
-
-font-family:'Playfair Display', serif;
-
-font-size:42px;
-
-margin-bottom:10px;
-
-color:#2c2c2c;
-
+/* HEADER CENTRADO */
+.header-mireya{
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-
-/* SUBTITULO */
-
-.subtitulo-sobre{
-
-font-family:'Dancing Script', cursive;
-
-font-size:28px;
-
-color:#e91e63;
-
-margin-bottom:20px;
-
+/* TITULO GRANDE */
+.titulo{
+  font-size: 60px;
+  font-weight: 900;
+  margin: 0;
+  color: #2c2c2c;
+  font-family: 'Playfair Display', serif;
 }
 
-
-/* TEXTO */
-
-.sobre-mireya p{
-
-font-size:16px;
-
-line-height:1.8;
-
-color:#444;
-
+.subtitulo{
+  font-size: 22px;      /* tamaño mediano */
+  text-align: center;   /* centrado */
+  margin-top: 15px;     /* un poco abajo del título */
+  line-height: 1.6;     /* texto más prolijo */
+  font-style: italic;   /* estilo lindo */
+  color: #777;
 }
 
-
-/* FOTO */
-
-.foto-mireya{
-
-border-radius:10px;
-
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
-
+/* CONTENIDO FLEX */
+.contenido-mireya{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
+/* TEXTO IZQUIERDA */
+.texto{
+  flex: 1;
+}
+
+.texto p{
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify; /* corrido */
+  color: #555;
+}
+
+/* IMAGEN DERECHA */
+.imagen{
+  flex: 1;
+  text-align: center;
+}
+
+.imagen img{
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+}
 
 /* =========================
 FOOTER
@@ -253,3 +258,4 @@ transition:0.3s;
 background:#d9152f;
 
 }
+

@@ -1,87 +1,71 @@
 body{
-
-margin:0;
-padding:0;
-
+  margin:0;
+  padding:0;
 }
 
 
 /* NAVBAR */
 
 .nav-mireya{
-
-background:#e6a6b0;
-padding:15px;
-
+  background:#e6a6b0;
+  padding:15px;
 }
 
 
 /* LOGO */
 
 .logo-mireya{
-
-width:45px;
-border-radius:50%;
-
+  width:45px;
+  border-radius:50%;
 }
 
+
+/* NAV LINKS (MEJORADO 🔥) */
 
 .nav-link{
+  font-family:'Dancing Script', cursive;
 
-font-family:'Dancing Script', cursive;
+  font-size:26px;        /* 🔥 un poco más grande */
+  font-weight:900;       /* 🔥 MÁS GRUESO REAL */
 
-font-size:24px;       /* tamaño más grande */
+  letter-spacing:1px;
+  color:#2c2c2c;
 
-font-weight:700;      /* letras más gruesas */
+  margin-left:25px;
 
-letter-spacing:1px;   /* separa un poco las letras */
+  transition:all 0.3s ease;
 
-color:#2c2c2c;
-
-margin-left:25px;
-
-transition:0.3s;
-
+  /* 🔥 simula más grosor sin cambiar fuente */
+  text-shadow: 1px 0 #2c2c2c;
 }
+
+
+/* HOVER MEJORADO 🔥 */
 
 .nav-link:hover{
-
-color:white;
-
-}
-/* CARRUSEL */
-
-.imagen-carrusel{
-
-height:700px;
-object-fit:cover;
-
-}
-.imagen-carrusel{
-
-height:700px;
-object-fit:cover;
-opacity:0.85;   /* controla la transparencia */
-
-}
-.carousel-item{
-
-position:relative;
-
+  color:white;
+  transform:scale(1.05); /* leve crecimiento */
 }
 
-.carousel-item::after{
 
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:#00000040;  /* opacidad elegante */
+/* =========================
+RESPONSIVE NAV 🔥
+========================= */
+
+@media (max-width: 991px){
+
+  .nav-link{
+    margin-left:0;
+    margin-top:10px;
+    font-size:24px;
+    text-align:center;
+  }
+
+  .navbar-nav{
+    align-items:center;
+  }
 
 }
-
 /* BOTON PEDI ONLINE */
 
 .boton-pedido{
@@ -157,7 +141,7 @@ cursor:pointer;
 
 .footer-links li:hover{
 
-color:#e91e63;
+color:#f5eef0;
 
 }
 
@@ -197,4 +181,93 @@ background:#f2f2f2;   /* gris claro elegante */
 padding:70px 0;
 border-top:1px solid #ddd;
 
+}
+
+/* Carrusel diseño
+/* ===== CARRUSEL CON TEXTO Y BOTONES ===== */
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.fade-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Botones del carrusel */
+.btn {
+  font-weight: bold;
+  border-radius: 5px;
+} 
+
+/* Animación del texto que entra desde la izquierda */
+.carousel-caption {
+  top: 20%; /* posición desde arriba */
+  text-align: center;
+}
+
+.fade-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  opacity: 0;
+  animation: slideFromLeft 1.5s forwards;
+}
+
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); /* empieza a la izquierda */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* llega a su posición */
+  }
+}
+
+/* Botones */
+.carousel-caption .btn {
+  opacity: 0;
+  animation: fadeInBtn 2s forwards;
+  animation-delay: 1s; /* aparece después del texto */
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+@keyframes fadeInBtn {
+  to { opacity: 1; }
+}
+
+/* Botones rojos específicos */
+.btn-danger {
+  background-color: #faf4f5;
+  border: none;
+  color: #f50505;
+}
+
+.btn-danger:hover {
+  background-color: #d9152f;
+}
+
+.btn-light {
+  background-color: white;
+  color: #2c2c2c;
+}
+
+.btn-light:hover {
+  background-color: #e6e6e6;
 }

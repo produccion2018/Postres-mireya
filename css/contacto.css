@@ -1,157 +1,223 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-   
-    
-  }
-  
-  /* barra de navegaccion */
-  .web-logo{
-    border-radius: 50%;
-    width: 30px;
-    margin-bottom: 10px;
-    opacity: 0.9;
-  }
-  
-  
-  
+/* =========================
+GENERAL
+========================= */
+body{
+  margin:0;
+  padding:0;
+}
+
+/* =========================
+NAVBAR
+========================= */
+.nav-mireya{
+  background:#e6a6b0;
+  padding:15px;
+}
+
+.logo-mireya{
+  width:45px;
+  border-radius:50%;
+}
+
+.nav-link{
+  font-family:'Dancing Script', cursive;
+  font-size:26px;
+  font-weight:900;
+  letter-spacing:1px;
+  color:#2c2c2c;
+  margin-left:25px;
+  transition:all 0.3s ease;
+  text-shadow: 1px 0 #2c2c2c;
+}
+
+.nav-link:hover, .nav-link.active{
+  color:white;
+  transform:scale(1.05);
+}
+
+@media (max-width: 991px){
   .nav-link{
-  font-family: "Courgette", cursive;
-  font-size:1rem;
-  color: #33353d;
-  
+    margin-left:0;
+    margin-top:10px;
+    font-size:24px;
+    text-align:center;
   }
-  
-  .navbar {
-  padding: 3rem;
-  background-color: #ffc0cb;
+  .navbar-nav{
+    align-items:center;
   }
-  .navbar-collapse {
-  align-items: center;
-  justify-content: space-between;  
-  }
-  
-  .nav-link:hover {
-    background-color: #ffffff;
-    color: #f8b400;
-    padding: 5px;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
+}
 
-  h2{
-    font-family: "Courgette", cursive;
-    font-size:1rem;
-    color: #020202;
-  }
-  
-  .container-form-map {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: space-around;
-    margin-top: 2rem;
-   
-  }
-  
-  .contact-form {
-    flex: 1 1 300px;
-    max-width: 500px;
-  }
-  
-  .map-container {
-    flex: 1 1 300px;
-    max-width: 500px;
-  }
-  
-  iframe {
-    width: 100%;
-    height: 300px;
-    border: 0;
-    border-radius: 8px;
-  }
-  
-  /* footer */
-  
+/* =========================
+BOTON PEDI ONLINE
+========================= */
+.boton-pedido{
+  background:#ff1f3d;
+  color:white;
+  padding:10px 18px;
+  font-size:14px;
+  font-weight:600;
+  border-radius:3px;
+  text-decoration:none;
+  transition:0.3s;
+}
 
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 40px 20px;
-    font-family: 'Courgette', sans-serif;
-    text-align: center;
+.boton-pedido:hover{
+  background:#d9152f;
+  color:white;
+}
+
+/* =========================
+SECCION CONTACTO
+========================= */
+.contacto-mireya{
+  padding:100px 0;
+  background:white;
+}
+
+/* TITULO Y SUBTITULO */
+.contacto-mireya h2{
+  font-family:'Playfair Display', serif;
+  font-size:42px;
+  margin-bottom:10px;
+  color:#2c2c2c;
+  text-align:center;
+}
+
+.contacto-mireya p{
+  font-family:'Dancing Script', cursive;
+  font-size:28px;
+  color:#e91e63;
+  text-align:center;
+  margin-bottom:40px;
+}
+
+/* FORMULARIO */
+.contacto-mireya form{
+  max-width:700px;
+  margin:0 auto;
+  background:white;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.contacto-mireya .form-label{
+  font-weight:600;
+  color:#2c2c2c;
+}
+
+.contacto-mireya .form-control{
+  border-radius:5px;
+  padding:12px;
+  font-size:16px;
+  border:1px solid #ddd;
+  margin-bottom:15px;
+  transition:all 0.3s ease;
+}
+
+.contacto-mireya .form-control:focus{
+  border-color:#ff1f3d;
+  box-shadow:0 0 5px rgba(255,31,61,0.4);
+  outline:none;
+}
+
+.contacto-mireya textarea.form-control{
+  resize:none;
+}
+
+.contacto-mireya button.boton-suscribirse{
+  background:#ff1f3d;
+  color:white;
+  font-size:16px;
+  font-weight:600;
+  padding:12px;
+  border-radius:5px;
+  border:none;
+  transition:0.3s;
+  width:100%;
+}
+
+.contacto-mireya button.boton-suscribirse:hover{
+  background:#d9152f;
+}
+
+/* =========================
+FOOTER
+========================= */
+.footer-mireya{
+  background:#f2f2f2;
+  padding:70px 0;
+  border-top:1px solid #ddd;
+}
+
+.footer-logo{
+  width:60px;
+  margin-bottom:15px;
+}
+
+.footer-frase{
+  font-style:italic;
+  color:#555;
+}
+
+.footer-mail{
+  color:#e91e63;
+  font-weight:500;
+}
+
+.footer-links{
+  list-style:none;
+  padding:0;
+}
+
+.footer-links li{
+  margin-bottom:8px;
+  cursor:pointer;
+}
+
+.footer-links li:hover{
+  color:#e91e63;
+}
+
+.footer-texto{
+  font-size:14px;
+  line-height:1.6;
+}
+
+.boton-suscribirse{
+  background:#ff1f3d;
+  color:white;
+  border:none;
+  padding:10px;
+  transition:0.3s;
+  border-radius:5px;
+  font-weight:600;
+}
+
+.boton-suscribirse:hover{
+  background:#d9152f;
+}
+
+/* FOTO OPCIONAL EN CONTACTO */
+.contacto-mireya .foto-mireya{
+  display:block;
+  max-width:100%;
+  margin:30px auto;
+  border-radius:10px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+@media(max-width:768px){
+  .contacto-mireya h2{
+    font-size:36px;
   }
-  
-  .footer .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
+  .contacto-mireya p{
+    font-size:20px;
   }
-  
-  /* Secciones del Footer */
-  .footer-section {
-    flex: 1 1 200px;
-    margin: 10px;
+  .contacto-mireya form{
+    padding:20px;
   }
-  
-  .footer-logo {
-    border-radius: 50%;
-    width: 30px;
-    margin-bottom: 10px;
-    opacity: 0.7;
-  }
-  
-  /* Enlaces */
-  .footer a {
-    color: #f8b400;
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
-  
-  /* Listas */
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-section ul li {
-    margin: 5px 0;
-  }
-  
-  /* Formulario de suscripción */
-  .subscription-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 15px;
-  }
-  
-  .subscription-form input {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-  }
-  
-  .subscription-form button {
-    background-color: #f8b400;
-    color: #333;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
-  
-  .subscription-form button:hover {
-    background-color: #fff;
-    color: #f8b400;
-  }
-  
+}
