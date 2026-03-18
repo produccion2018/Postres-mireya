@@ -271,3 +271,34 @@ border-top:1px solid #ddd;
 .btn-light:hover {
   background-color: #e6e6e6;
 }
+
+
+
+/* responsive  */
+
+/* =========================
+TITULO CARRUSEL RESPONSIVE 🔥
+========================= */
+
+@media (max-width: 768px){
+
+  .fade-text{
+    font-size: 1.8rem;   /* 🔥 más chico para celular */
+    line-height: 1.2;
+    padding: 0 10px;     /* evita que toque bordes */
+  }
+
+  .carousel-caption{
+    top: 30%;            /* baja un poco el texto */
+  }
+
+}
+
+@media (max-width: 480px){
+
+  .fade-text{
+    font-size: 1.5rem;   /* 🔥 aún más chico en celulares chicos */
+    text-shadow: 3px 3px 6px black; /* 🔥 más contraste */
+  }
+
+}
